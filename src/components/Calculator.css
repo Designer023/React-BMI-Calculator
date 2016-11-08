@@ -1,0 +1,72 @@
+
+td, th {
+  padding: 0.5em;
+}
+.currentCol {
+  font-weight: 800;
+}
+.currentRow {
+  font-weight: 800;
+}
+
+
+.currentRow.currentCol {
+  color: white;
+}
+
+
+
+
+.low {
+  background: #80c8ff;
+}
+
+.normal {
+  background: green;
+}
+
+.high {
+  background: orange;
+}
+
+.very-high {
+  background: red;
+}
+
+
+
+.bmi-16 {
+  background: #80c8ff;
+}
+
+.bmi-17 {
+  background: #5eb9ff;
+}
+
+.bmi-18 {
+  background: #35a7fe;
+}
+
+.bmi-19 {
+  background: #1298fe;
+}
+
+.bmi-20 {
+  background: #cfee82;
+}
+
+.bmi-21 {
+  background: #c2ea61;
+}
+
+.bmi-22 {
+  background: #b3e539;
+}
+
+.bmi-23 {
+  background: #a6e017;
+}
+
+.bmi-24 {
+  background: #a6e017;
+}
