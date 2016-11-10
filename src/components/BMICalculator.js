@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import BMIInput from './BMIInput';
+import BMIInput from './BMIInput/BMIInput';
 import BMITable from './BMITable';
 
 import { roundN } from '../utils';
