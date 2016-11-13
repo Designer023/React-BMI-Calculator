@@ -1,14 +1,3 @@
-export const REQUEST_GIFS = 'REQUEST_GIFS';
-
-export function requestGifs(term = null) {
-  console.log(term);
-  return {
-    type: REQUEST_GIFS,
-    term
-  }
-}
-
-
 export const BMI_UPDATE_WEIGHT_UNITS = 'BMI_UPDATE_WEIGHT_UNITS';
 
 export function requestBMIWeightUnit(metric = null) {
