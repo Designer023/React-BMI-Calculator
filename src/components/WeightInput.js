@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { lb2kg, kg2lbs } from '../utils';
+import "./Inputs.css";
 
 class WeightInput extends Component {
 
@@ -10,14 +11,12 @@ class WeightInput extends Component {
   }
 
   updateWeight(event) {
-    console.log("CHANGE WEIGHT to: ", event.target.value);
     let weightLbs = parseInt(event.target.value, 10);
     this.props.updateBMIWeight(weightLbs);
   }
 
   updateWeightMetric(event) {
     let weightLbs= kg2lbs(parseInt(event.target.value, 10));
-    console.log('test ', weightLbs);
     this.props.updateBMIWeight(weightLbs)
   }
 
@@ -29,11 +28,11 @@ class WeightInput extends Component {
 
     if (this.props.displayMetricWeight === true) {
       return (
-          <input type="number" id="weight" onChange={this.updateWeightMetric} value={metricWeight} step={1}/>
+          <input className="bmi-form-field" type="number" id="weight" onChange={this.updateWeightMetric} value={metricWeight} step={1}/>
       )
     } else {
       return(
-        <input type="number" id="weight" onChange={this.updateWeight} value={this.props.weight} step={5}/>
+        <input className="bmi-form-field" type="number" id="weight" onChange={this.updateWeight} value={this.props.weight} step={5}/>
       )
     }
   }

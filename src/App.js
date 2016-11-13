@@ -11,13 +11,14 @@ import BMIUnitToggle from './components/BMIUnitToggle';
 import WeightInput from './components/WeightInput';
 import HeightInput from './components/HeightInput';
 
+import "./App.css";
 
 class App extends Component {
 
   render() {
     return (
 
-      <div>
+      <div className="bmi-calculator">
 
         <BMIUnitToggle name="wmt" value={this.props.bmi.displayMetricWeight} trueLabel="KG" falseLabel="Lbs" onChange={this.props.actions.requestBMIWeightUnit} />
 
@@ -26,6 +27,8 @@ class App extends Component {
         <BMIUnitToggle name="hmt" value={this.props.bmi.displayMetricHeight} trueLabel="CM" falseLabel="Feet &amp; Inches" onChange={this.props.actions.requestBMIHeightUnit} />
 
         <HeightInput height={this.props.bmi.height} displayMetricHeight={this.props.bmi.displayMetricHeight} updateBMIHeight={this.props.actions.updateBMIHeight} />
+
+        <button onClick={this.props.actions.resetValues}>Reset</button>
 
         <BMITable weight={this.props.bmi.weight} height={this.props.bmi.height} tableRange={this.props.bmi.tableRange} />
 

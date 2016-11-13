@@ -1,0 +1,14 @@
+.bmi-form-field {
+    border: 1px solid #bbb;
+    padding: 0.3333em 1em 0.33333em 1em;
+    padding-top: -webkit-calc(0.3333em + 1px);
+    padding-top: calc(0.3333em + 1px);
+    padding-bottom: -webkit-calc(0.3333em + 1px);
+    padding-bottom: calc(0.3333em + 1px);
+    font-size: 1em;
+    height: 45px;
+    line-height: 1.5;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
