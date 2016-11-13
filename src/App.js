@@ -7,7 +7,7 @@ import * as Actions from './actions';
 
 import BMITable from './components/BMITable';
 
-import BMIUnitToggle from './components/BMIInput/components/BMIUnitToggle';
+import BMIUnitToggle from './components/BMIUnitToggle';
 import WeightInput from './components/WeightInput';
 import HeightInput from './components/HeightInput';
 

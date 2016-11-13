@@ -25,11 +25,11 @@ export default function bmi(state = initialState, action) {
       };
     case BMI_UPDATE_HEIGHT_VALUE:
       return {
-        ...state, weight:action.height
+        ...state, height:action.height
       };
     case BMI_UPDATE_WEIGHT_VALUE:
       return {
-        ...state, height:action.weight
+        ...state, weight:action.weight
       };
     default:
       return state;
