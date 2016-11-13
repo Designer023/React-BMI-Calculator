@@ -64,17 +64,8 @@ class BMICalculator extends Component {
     return (
       <div className="bmi-calcualtor">
 
-        <BMIInput
-        weight={this.state.weight}
-        height={this.state.height}
-        updateWeight={ this.updateWeight }
-        updateHeight={ this.updateHeight }
-        updateWeightMetric={this.updateWeightMetric }
-        displayMetricWeight={this.state.displayMetricWeight}
-        displayMetricHeight={this.state.displayMetricHeight}
-        updateHeightUnits={this.updateHeightUnits}
-        updateWeightUnits={this.updateWeightUnits}
-        />
+
+
 
         <BMITable weight={this.state.weight} height={this.state.height} tableRange={this.state.tableRange} />
 
@@ -98,3 +89,18 @@ BMICalculator.defaultProps = {
 }
 
 export default BMICalculator;
+
+
+
+      // 
+      // <BMIInput
+      // weight={this.state.weight}
+      // height={this.state.height}
+      // updateWeight={ this.updateWeight }
+      // updateHeight={ this.updateHeight }
+      // updateWeightMetric={this.updateWeightMetric }
+      // displayMetricWeight={this.state.displayMetricWeight}
+      // displayMetricHeight={this.state.displayMetricHeight}
+      // updateHeightUnits={this.updateHeightUnits}
+      // updateWeightUnits={this.updateWeightUnits}
+      // />

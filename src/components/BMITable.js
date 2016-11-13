@@ -4,6 +4,7 @@ import BMIRow from './BMIRow';
 
 import { lb2kg, in2M } from '../utils';
 
+import './Calculator.css';
 
 class BMITable extends Component {
 

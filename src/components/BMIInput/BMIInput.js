@@ -73,7 +73,7 @@ class BMIInput extends Component {
 
         <div className="bmi-input-form__row">
 
-          <BMIUnitToggle name="wmt" value={this.props.displayMetricWeight} trueLabel="KG" falseLabel="Lbs" onChange={this.updateWeightUnits} />
+
 
           <label>Weight
             { this.weightInput() }
@@ -83,7 +83,6 @@ class BMIInput extends Component {
 
         <div className="bmi-input-form__row">
 
-          <BMIUnitToggle name="hmt" value={this.props.displayMetricHeight} trueLabel="CM" falseLabel="Feet &amp; Inches" onChange={this.updateHeightUnits} />
 
           <label>Height
               <BMIHeightInput height={this.props.height}
