@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { in2cm, cm2in } from '../utils';
 
+import "./Inputs.css";
+
 class HeightInput extends Component {
 
   constructor(props) {
@@ -39,14 +41,14 @@ class HeightInput extends Component {
     if (this.props.displayMetricHeight === true) {
       return (
         <div>
-          <input type="number" id="height" onChange={this.updateHeightInCM} value={metricHeight} />
+          <input className="bmi-form-field" type="number" id="height" onChange={this.updateHeightInCM} value={metricHeight} />
         </div>
       )
     } else {
       return (
         <div>
-          <input type="number" id="heightFeet" onChange={this.updateHeightInFeetInches} value={feetHeight} ref="feet" />
-          <input type="number" id="heightInches" onChange={this.updateHeightInFeetInches} value={inchesHeight} ref="inches" />
+          <input className="bmi-form-field" type="number" id="heightFeet" onChange={this.updateHeightInFeetInches} value={feetHeight} ref="feet" />
+          <input className="bmi-form-field" type="number" id="heightInches" onChange={this.updateHeightInFeetInches} value={inchesHeight} ref="inches" />
 
         </div>
       )
